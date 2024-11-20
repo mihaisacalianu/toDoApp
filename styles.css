@@ -1,0 +1,62 @@
+
+body{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-width: 60%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.app-container{
+    height: auto;
+    width:50%;
+    background-color: beige;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 0.5fr);
+    border-radius: 10px;
+}
+.app-title{
+    grid-column: 3 /span 2 ;
+    justify-self: center;
+    align-self: center;
+    text-transform: capitalize;
+}
+.input-field{
+    grid-column: 2 /span 2;
+    grid-row: 2;
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+}
+.new-task-button{
+    grid-column: 4;
+    grid-row: 2;
+    justify-self:center;
+    align-self: center;
+    
+}
+button{
+    background-color: orange;
+    border-radius: 10px;
+    color: black;
+}
+.task-text{
+    grid-column: 2 /span 4;
+    grid-row: 3 / span auto;
+    display: grid;
+    grid-template-columns: 2fr 0.5fr 1fr;
+    grid-template-rows: 0.5fr;
+    align-items: center;
+    justify-items: flex-start;
+}
+
+.checkbox{
+    grid-row: auto;
+} 
+
+
+.delete-button{
+    grid-row: auto;
+} 
